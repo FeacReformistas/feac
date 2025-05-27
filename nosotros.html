@@ -4,33 +4,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>FEAC Reformistas</title>
+  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
   <link href="css/business-casual.min.css" rel="stylesheet">
   <style>
-    .bg-faded {
-      max-width: 600px !important;
-      width: 100% !important;
-      aspect-ratio: 1 / 1;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      background: rgba(255,255,255,0.93) !important;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.20);
-      padding: 2rem !important;
+    body, html {
+      height: 100%;
+      min-height: 100%;
+    }
+    .about-heading {
+      min-height: 80vh;
       display: flex;
-      flex-direction: column;
+      align-items: center;
       justify-content: center;
     }
-    .bg-faded h1, .bg-faded b {
-      text-align: center;
+    .cuadro-central {
+      background: rgba(255,255,255,0.93);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.20);
+      border-radius: 8px;
+      width: 550px;
+      height: 550px;
+      max-width: 95vw;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 2.5rem 2.5rem 2rem 2.5rem;
+    }
+    .cuadro-central h1, .cuadro-central b {
+      text-align: left;
       display: block;
     }
-    /* Opcional: para que el texto no se salga del cuadrado en pantallas pequeñas */
     @media (max-width: 600px) {
-      .bg-faded {
-        max-width: 98vw !important;
-        padding: 1rem !important;
+      .cuadro-central {
+        width: 98vw;
+        height: auto;
+        min-height: 350px;
+        padding: 1.5rem 0.7rem;
       }
     }
   </style>
@@ -40,6 +52,7 @@
     <span class="site-heading-lower">FEAC</span>
     <span class="site-heading-upper text-primary mb-3">reformistas</span>
   </h1>
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
       <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Menu</a>
@@ -66,22 +79,16 @@
     </div>
   </nav>
   <section class="page-section about-heading">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="bg-faded rounded p-5">
-            <b>FEAC REFORMISTAS</b>
-            <h1>NOSOTROS</h1>
-            <p>
-              Feac Reformistas es una empresa especializada en aportar soluciones integrales en todo tipo de reformas...
-            </p>
-            <p class="mb-0">
-              - Nuestro elemento más DIFERENCIADOR es el TRATO PERSONALIZADO...<br>
-              - Disponemos de un equipo de profesionales cualificados...<br>
-              - COMPROMISO Y EFICACIA...
-            </p>
-          </div>
-        </div>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100%;">
+      <div class="cuadro-central">
+        <b>FEAC REFORMISTAS</b>
+        <h1>NOSOTROS</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla dignissim facilisis. Phasellus nec vulputate nulla. Aenean euismod lectus ac massa vehicula, ac venenatis eros posuere. Curabitur in aliquam erat, in eleifend nisl. Nullam pellentesque facilisis eros, vel feugiat nisi rutrum a. Phasellus neque ligula, efficitur id egestas eget, rhoncus vel mauris. Praesent sit amet nisi vitae velit congue tempus.
+        </p>
+        <p>
+          Cras rutrum risus non varius tempor. Fusce auctor dolor sit amet ligula semper, eu ultricies dolor laoreet. Ut vitae tortor id nisl pretium tempor. Curabitur non eleifend ex, vitae tincidunt nisl. Sed fringilla euismod neque in fermentum. Cras vestibulum dictum neque in porttitor. Vestibulum eget mauris purus. Aliquam erat volutpat. Duis rutrum massa non risus viverra, eget malesuada lectus vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc sollicitudin ex urna, id laoreet justo tincidunt ac.
+        </p>
       </div>
     </div>
   </section>
