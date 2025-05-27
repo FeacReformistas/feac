@@ -10,39 +10,45 @@
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
   <link href="css/business-casual.min.css" rel="stylesheet">
   <style>
-    body, html {
+    html, body {
       height: 100%;
       min-height: 100%;
     }
-    .about-heading {
-      min-height: 80vh;
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .page-section.about-heading {
+      flex: 1 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
+      min-height: 80vh;
     }
     .cuadro-central {
       background: rgba(255,255,255,0.93);
       box-shadow: 0 8px 32px rgba(0,0,0,0.20);
-      border-radius: 8px;
-      width: 300px;
-      height: 300px;
-      max-width: 95vw;
-      max-height: 90vh;
+      border-radius: 10px;
+      width: 400px;
+      height: 400px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding: 2.5rem 2.5rem 2rem 2.5rem;
+      overflow: auto;
+      padding: 2rem;
     }
     .cuadro-central h1, .cuadro-central b {
       text-align: left;
       display: block;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 450px) {
       .cuadro-central {
         width: 98vw;
-        height: auto;
-        min-height: 350px;
-        padding: 1.5rem 0.7rem;
+        height: 98vw;
+        min-width: 0;
+        min-height: 0;
+        padding: 1rem;
       }
     }
   </style>
@@ -79,21 +85,19 @@
     </div>
   </nav>
   <section class="page-section about-heading">
-    <div class="container d-flex justify-content-center align-items-center" style="height: 100%;">
-      <div class="cuadro-central">
-        <b>FEAC REFORMISTAS</b>
-        <h1>NOSOTROS</h1>
-        <p>
-              Feac Reformistas es una empresa especializada en aportar soluciones integrales en todo tipo de reformas ya sea electricidad, fontanería, carpintería (puertas, paredes móviles, armarios, vestidores, parquets, aluminio y pvc), albañilería (alicatados, tabiquería, pladur, etc.), calefacción y gas, pintura, diferentes trabajos en terrazas… <br>
-              Nuestro principal objetivo es asesorarles en todos los problemas que puedan tener en su inmueble.
-              Nuestro equipo tiene una experiencia de más de 15 años implementando todo tipo de proyectos, siempre ajustándonos a las necesidades específicas de cada cliente. Eso nos ha proporcionado una amplia experiencia que compartimos con nuestros clientes. 
-        </p>
-        <p>
-           Nuestro elemento más DIFERENCIADOR es el TRATO PERSONALIZADO ya que analizamos las necesidades de cada cliente con el objetivo de encontrar una solución integral. <br>
-              - Disponemos de un equipo de profesionales cualificados, expertos en construcción. Le garantizamos resultados de calidad. El servicio que ofrecemos a nuestros clientes nos avala. <br>
-              - COMPROMISO Y EFICACIA, nos esforzamos por convertir a cada cliente en un compromiso profesional. Y le brindamos una respuesta efectiva a cualquier duda o incidencia. <br>
-        </p>
-      </div>
+    <div class="cuadro-central">
+      <b>FEAC REFORMISTAS</b>
+      <h1>NOSOTROS</h1>
+      <p>
+            Feac Reformistas es una empresa especializada en aportar soluciones integrales en todo tipo de reformas ya sea electricidad, fontanería, carpintería (puertas, paredes móviles, armarios, vestidores, parquets, aluminio y pvc), albañilería (alicatados, tabiquería, pladur, etc.), calefacción y gas, pintura, diferentes trabajos en terrazas… <br>
+            Nuestro principal objetivo es asesorarles en todos los problemas que puedan tener en su inmueble.
+            Nuestro equipo tiene una experiencia de más de 15 años implementando todo tipo de proyectos, siempre ajustándonos a las necesidades específicas de cada cliente. Eso nos ha proporcionado una amplia experiencia que compartimos con nuestros clientes. 
+      </p>
+      <p>
+         Nuestro elemento más DIFERENCIADOR es el TRATO PERSONALIZADO ya que analizamos las necesidades de cada cliente con el objetivo de encontrar una solución integral. <br>
+            - Disponemos de un equipo de profesionales cualificados, expertos en construcción. Le garantizamos resultados de calidad. El servicio que ofrecemos a nuestros clientes nos avala. <br>
+            - COMPROMISO Y EFICACIA, nos esforzamos por convertir a cada cliente en un compromiso profesional. Y le brindamos una respuesta efectiva a cualquier duda o incidencia. <br>
+      </p>
     </div>
   </section>
   <footer class="footer text-faded text-center py-5">
