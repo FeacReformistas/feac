@@ -4,27 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>FEAC Reformistas</title>
-  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
-  <!-- Custom styles for this template -->
   <link href="css/business-casual.min.css" rel="stylesheet">
   <style>
-    /* Solución para centrar y limitar el ancho del bloque translúcido */
     .bg-faded {
-      max-width: 900px !important;
+      max-width: 600px !important;
+      width: 100% !important;
+      aspect-ratio: 1 / 1;
       margin-left: auto !important;
       margin-right: auto !important;
-      width: 100% !important;
       background: rgba(255,255,255,0.93) !important;
       box-shadow: 0 8px 32px rgba(0,0,0,0.20);
-      padding: 3rem !important;
+      padding: 2rem !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .bg-faded h1, .bg-faded b {
       text-align: center;
       display: block;
+    }
+    /* Opcional: para que el texto no se salga del cuadrado en pantallas pequeñas */
+    @media (max-width: 600px) {
+      .bg-faded {
+        max-width: 98vw !important;
+        padding: 1rem !important;
+      }
     }
   </style>
 </head>
@@ -33,7 +40,6 @@
     <span class="site-heading-lower">FEAC</span>
     <span class="site-heading-upper text-primary mb-3">reformistas</span>
   </h1>
-  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
       <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Menu</a>
@@ -67,14 +73,12 @@
             <b>FEAC REFORMISTAS</b>
             <h1>NOSOTROS</h1>
             <p>
-              Feac Reformistas es una empresa especializada en aportar soluciones integrales en todo tipo de reformas ya sea electricidad, fontanería, carpintería (puertas, paredes móviles, armarios, vestidores, parquets, aluminio y pvc), albañilería (alicatados, tabiquería, pladur, etc.), calefacción y gas, pintura, diferentes trabajos en terrazas… <br>
-              Nuestro principal objetivo es asesorarles en todos los problemas que puedan tener en su inmueble.
-              Nuestro equipo tiene una experiencia de más de 15 años implementando todo tipo de proyectos, siempre ajustándonos a las necesidades específicas de cada cliente. Eso nos ha proporcionado una amplia experiencia que compartimos con nuestros clientes. <br>
+              Feac Reformistas es una empresa especializada en aportar soluciones integrales en todo tipo de reformas...
             </p>
             <p class="mb-0">
-              - Nuestro elemento más DIFERENCIADOR es el TRATO PERSONALIZADO ya que analizamos las necesidades de cada cliente con el objetivo de encontrar una solución integral. <br>
-              - Disponemos de un equipo de profesionales cualificados, expertos en construcción. Le garantizamos resultados de calidad. El servicio que ofrecemos a nuestros clientes nos avala. <br>
-              - COMPROMISO Y EFICACIA, nos esforzamos por convertir a cada cliente en un compromiso profesional. Y le brindamos una respuesta efectiva a cualquier duda o incidencia. <br>
+              - Nuestro elemento más DIFERENCIADOR es el TRATO PERSONALIZADO...<br>
+              - Disponemos de un equipo de profesionales cualificados...<br>
+              - COMPROMISO Y EFICACIA...
             </p>
           </div>
         </div>
@@ -86,7 +90,6 @@
       <p class="m-0 small">Copyright &copy; FEAC Reformistas 2018</p>
     </div>
   </footer>
-  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
